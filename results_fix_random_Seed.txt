@@ -1,0 +1,93 @@
+random seed 
+rng(0)
+
+
+1.RUN
+
+Experiment Results  Augmented, Day:25-Oct-2021,  DataName: Traindatatwoclass_15features_24_10_2021_augmentedJitter_var_002
+Train Accuracy, Validation Accuracy,Test Accuracy, Precision, Recall, F1-score
+14 Feature Set
+97,34 85 75 0,775 0,75 0,775
+98,936 80 70 0,738 0,7 0,738
+100 85 60 0,619 0,6 0,619
+100 80 60 0,619 0,6 0,619
+98,936 80 65 0,665 0,65 0,665
+ Train Accuracy, Validation Accuracy Test Accuracy, Precision, Recall, F1-score
+Mean: 99,043 82 66 0,683 0,66 0,683
+Min: 97,34 80 60 0,619 0,6 0,619
+Max: 100 85 75 0,775 0,75 0,775
+STD: 0,011 0,027 0,065 0,071 0,065 0,071
+14 Feature Set
+
+
+
+Mean Test Accuracy, Min Test Accuracy,    Max Test Accuracy,   STD Test Accuracy
+
+66                      60                          75              0,065
+
+
+
+
+
+2.RUN
+
+Experiment Results  Augmented, Day:25-Oct-2021,  DataName: Traindatatwoclass_15features_24_10_2021_augmentedJitter_var_002
+Train Accuracy, Validation Accuracy,Test Accuracy, Precision, Recall, F1-score
+14 Feature Set
+97,34 85 75 0,775 0,75 0,775
+98,936 80 70 0,738 0,7 0,738
+100 85 60 0,619 0,6 0,619
+100 80 60 0,619 0,6 0,619
+98,936 80 65 0,665 0,65 0,665
+ Train Accuracy, Validation Accuracy Test Accuracy, Precision, Recall, F1-score
+Mean: 99,043 82 66 0,683 0,66 0,683
+Min: 97,34 80 60 0,619 0,6 0,619
+Max: 100 85 75 0,775 0,75 0,775
+STD: 0,011 0,027 0,065 0,071 0,065 0,071
+14 Feature Set
+Mean Test Accuracy, Min Test Accuracy,    Max Test Accuracy,   STD Test Accuracy
+66 60 75 0,065
+Elapsed time is 261.709205 seconds.
+
+layers = 
+
+  5x1 Layer array with layers:
+
+     1   ''   Sequence Input          Sequence input with 14 dimensions
+     2   ''   LSTM                    LSTM with 30 hidden units
+     3   ''   Fully Connected         2 fully connected layer
+     4   ''   Softmax                 softmax
+     5   ''   Classification Output   crossentropyex
+
+options = 
+
+  TrainingOptionsADAM with properties:
+
+           GradientDecayFactor: 0.9000
+    SquaredGradientDecayFactor: 0.9990
+                       Epsilon: 1.0000e-08
+              InitialLearnRate: 0.0100
+             LearnRateSchedule: 'none'
+           LearnRateDropFactor: 0.1000
+           LearnRateDropPeriod: 10
+              L2Regularization: 1.0000e-04
+       GradientThresholdMethod: 'l2norm'
+             GradientThreshold: 1
+                     MaxEpochs: 200
+                 MiniBatchSize: 128
+                       Verbose: 0
+              VerboseFrequency: 50
+                ValidationData: {{20×1 cell}  [20×1 categorical]}
+           ValidationFrequency: 30
+            ValidationPatience: 5
+                       Shuffle: 'never'
+                CheckpointPath: ''
+          ExecutionEnvironment: 'gpu'
+                    WorkerLoad: []
+                     OutputFcn: []
+                         Plots: 'none'
+                SequenceLength: 'longest'
+          SequencePaddingValue: 0
+      SequencePaddingDirection: 'right'
+          DispatchInBackground: 0
+       ResetInputNormalization: 1

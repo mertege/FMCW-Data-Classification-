@@ -1,4 +1,4 @@
-clear all;clc;close all;
+clear all;clc;close all; % deneme
 
 numberofsamplesfast=57*3;
 numberofsampleseach=57;

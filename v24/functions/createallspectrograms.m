@@ -48,7 +48,6 @@ fs=1e7;
 [spect,f,t,p] = spectrogram(RangeMatrix(1, :), 512, 500, 512,fs,'centered','yaxis');
 
 for a = 2 : 512
-    a
     [s,f,t,p] = spectrogram(RangeMatrix(a, :), 512, 500, 512,fs,'centered','yaxis'); 
     spect = spect + s;
 

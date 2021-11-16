@@ -1,0 +1,6 @@
+%GPU:  
+%  80  seconds - for 1 sample non augmented, 57*3*80 /60 = 228 minutes for
+%  178  seconds - for 2 sample non augmented, 
+%CPU with parfor
+% -49.51 seconds - for 1 sample non augmented
+% 74.716721 seconds for 2 sample non augmented

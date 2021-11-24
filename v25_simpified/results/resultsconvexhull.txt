@@ -1,0 +1,11 @@
+
+% Running convex hull for 2 621 400 samples complex data = adcData
+
+% 1 sample Elapsed time is 1.05 seconds.
+% 2 sample Elapsed time is 1.23 seconds.
+% 10 sample 1.69 sec
+% 100 sample 2.79 sec
+% 1000 sample 15.58 sec
+% 10 000 sample  154.. sec
+% 2 621 400 samples  approximately 154 *250  38500 seconds = 641.6667 min - 10 hour for 1x augmentation therefore not applicable
+

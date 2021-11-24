@@ -1,0 +1,14 @@
+Experiment Results , Day:21-Nov-2021,  DataName: Traindatathreeclass_13features_21_11_2021_normalized_rdopplers
+
+13 feature ile memory hatası oluyor matlabda run olmuyor:
+
+Train Accuracy, Validation Accuracy,Test Accuracy, Precision, Recall, F1-score
+Error using trainNetwork (line 170)
+Maximum variable size allowed on the device is exceeded.
+
+Error in D_twoclass_lstm (line 108)
+    net = trainNetwork(TrainData,TrainY,layers,options);
+
+Caused by:
+    Error using nnet.internal.cnngpu.lstmForwardTrain
+    Maximum variable size allowed on the device is exceeded.

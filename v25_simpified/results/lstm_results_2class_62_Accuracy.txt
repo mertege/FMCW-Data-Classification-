@@ -1,0 +1,140 @@
+Experiment Results , Day:19-Nov-2021,  DataName: Traindatatwoclass_13features_18_11_2021_oversampled_normalized
+Train Accuracy, Validation Accuracy,Test Accuracy, Precision, Recall, F1-score
+98,936 65 70 0,7 0,7 0,7
+93,617 55 70 0,7 0,7 0,7
+99,468 55 60 0,604 0,6 0,604
+97,872 60 75 0,753 0,75 0,753
+100 60 60 0,619 0,6 0,619
+
+
+13 Feature Set
+ Test Accuracy: Mean, Min,    Max ,   STD 
+67 60 75 0,067
+
+
+
+ F1 score : Mean, Min,    Max ,   STD 
+       
+Elapsed time is 213.716304 seconds.
+
+layers = 
+
+  5x1 Layer array with layers:
+
+     1   ''   Sequence Input          Sequence input with 13 dimensions
+     2   ''   LSTM                    LSTM with 30 hidden units
+     3   ''   Fully Connected         2 fully connected layer
+     4   ''   Softmax                 softmax
+     5   ''   Classification Output   crossentropyex
+
+options = 
+
+  TrainingOptionsADAM with properties:
+
+           GradientDecayFactor: 0.9000
+    SquaredGradientDecayFactor: 0.9990
+                       Epsilon: 1.0000e-08
+              InitialLearnRate: 0.0100
+             LearnRateSchedule: 'none'
+           LearnRateDropFactor: 0.1000
+           LearnRateDropPeriod: 10
+              L2Regularization: 1.0000e-04
+       GradientThresholdMethod: 'l2norm'
+             GradientThreshold: 1
+                     MaxEpochs: 200
+                 MiniBatchSize: 128
+                       Verbose: 0
+              VerboseFrequency: 50
+                ValidationData: {{20×1 cell}  [20×1 categorical]}
+           ValidationFrequency: 30
+            ValidationPatience: 5
+                       Shuffle: 'never'
+                CheckpointPath: ''
+          ExecutionEnvironment: 'gpu'
+                    WorkerLoad: []
+                     OutputFcn: []
+                         Plots: 'none'
+                SequenceLength: 'longest'
+          SequencePaddingValue: 0
+      SequencePaddingDirection: 'right'
+          DispatchInBackground: 0
+       ResetInputNormalization: 1
+
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+Experiment Results , Day:19-Nov-2021,  DataName: Traindatatwoclass_13features_18_11_2021_oversampled_normalized
+
+v25
+
+Data1:
+load('F:\oytun_Calisma\data\spectrograms1_new.mat');
+load('F:\oytun_Calisma\data\spectrograms2_new.mat');
+load('F:\oytun_Calisma\data\spectrograms3_new.mat');
+
+Data2:
+load('F:\oytun_Calisma\data\Traindatatwoclass_features_18_11_2021');
+
+Data3:
+dataname='Traindatatwoclass_13features_18_11_2021_oversampled_normalized';
+
+Repeated 2 times
+
+
+Train Accuracy, Validation Accuracy,Test Accuracy, Precision, Recall, F1-score
+97,872 60 60 0,619 0,6 0,619
+100 55 65 0,7 0,65 0,7
+100 70 60 0,619 0,6 0,619
+95,745 65 65 0,665 0,65 0,665
+98,936 60 60 0,604 0,6 0,604
+13 Feature Set
+ Test Accuracy: Mean, Min,    Max ,   STD 
+62 60 65 0,027
+ F1 score : Mean, Min,    Max ,   STD 
+0,641 0,604 0,7 0,04
+Elapsed time is 209.186141 seconds.
+
+layers = 
+
+  5x1 Layer array with layers:
+
+     1   ''   Sequence Input          Sequence input with 13 dimensions
+     2   ''   LSTM                    LSTM with 30 hidden units
+     3   ''   Fully Connected         2 fully connected layer
+     4   ''   Softmax                 softmax
+     5   ''   Classification Output   crossentropyex
+
+options = 
+
+  TrainingOptionsADAM with properties:
+
+           GradientDecayFactor: 0.9000
+    SquaredGradientDecayFactor: 0.9990
+                       Epsilon: 1.0000e-08
+              InitialLearnRate: 0.0100
+             LearnRateSchedule: 'none'
+           LearnRateDropFactor: 0.1000
+           LearnRateDropPeriod: 10
+              L2Regularization: 1.0000e-04
+       GradientThresholdMethod: 'l2norm'
+             GradientThreshold: 1
+                     MaxEpochs: 200
+                 MiniBatchSize: 128
+                       Verbose: 0
+              VerboseFrequency: 50
+                ValidationData: {{20×1 cell}  [20×1 categorical]}
+           ValidationFrequency: 30
+            ValidationPatience: 5
+                       Shuffle: 'never'
+                CheckpointPath: ''
+          ExecutionEnvironment: 'gpu'
+                    WorkerLoad: []
+                     OutputFcn: []
+                         Plots: 'none'
+                SequenceLength: 'longest'
+          SequencePaddingValue: 0
+      SequencePaddingDirection: 'right'
+          DispatchInBackground: 0
+       ResetInputNormalization: 1
+
